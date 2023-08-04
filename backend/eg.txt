@@ -1,0 +1,15 @@
+{
+  "_id": {
+    "$oid": "64b1c82d36d00a5590b99741"
+  },
+  "user": {
+    "$oid": "64b07c9995f40643b935f4c6"
+  },
+  "title": "harry",
+  "description": "Woring on rdddddeact",
+  "tags": "General",
+  "date": {
+    "$date": "2023-07-14T22:11:57.319Z"
+  },
+  "__v": 0
+}
