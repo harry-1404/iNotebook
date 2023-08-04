@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-function Signup() {
+function Signup(props) {
   const [credential,setCredential] = useState({name:"", email:"", password:"", cpassword:""});
     let history=useNavigate();
 
@@ -22,9 +22,10 @@ function Signup() {
         //Save the auth token and redirect 
         localStorage.setItem('token', json.authtoken);
         history("/");
+        props.showAlert("Account Created Successfully", "success");
       }
       else{
-        alert("Invalid credential")
+        props.showAlert("Inavalid Details", "error");
       }
 }
 
