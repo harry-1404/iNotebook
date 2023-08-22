@@ -51,6 +51,7 @@ const NoteState=(props)=>{
           },
         });
         const json=await response.json(); 
+        console.log(json);
         const newNote=notes.filter((note)=>{return note._id!==id});
         setNotes(newNote);
       }
@@ -69,6 +70,7 @@ const NoteState=(props)=>{
           body: JSON.stringify({title,description,tag})
         });
         const json=await response.json(); 
+        console.log(json);
       
         let newNotes=JSON.parse(JSON.stringify(notes));
         // Logic to Edit notes for client
