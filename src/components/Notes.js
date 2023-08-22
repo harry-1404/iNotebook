@@ -15,7 +15,7 @@ const Notes = (props) => {
       getNotes()
     }
     else{
-      history("/Login.js")
+      history("/login")
     }
     // eslint-disable-next-line
   }, [])
